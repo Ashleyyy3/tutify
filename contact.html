@@ -1,97 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Easy Photoshop Tutorials </title>
-        <link rel="stylesheet"  type="text/css" href="style.css">
-       
-        <link rel="stylesheet"
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <a href="start.html" class="logo">Tu<span>ti</span>fy.</a>
-
-            <ul class="navlist">
-                <li><a href="start.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="video1.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="bx bx-menu" id="menu-icon">
-
-            </div>
-        </header>
-
-<!--Home-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Photoshop Tutorials</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
+    <!--Header-->
+    <header>
+        <a href="index.html" class="logo">Tu<span>ti</span>fy.</a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="video1.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
 
-
-
-     
- 
-
-<section class="cont">
-   <h2>Contact Us!</h2>
-
-   <form action="">
-       <div class="input-box">
-           <div class="input-field field">
-               <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
-               <div class="error-txt">Name required</div>
-           </div>
-
-           <div class="input-field field">
-               <input type="text" placeholder="Email Adress" id="email" class="item" autocomplete="off">
-               <div class="error-txt">Email required</div>
-           </div>
-           </div>
-           
-           <div class="input-field field">
-               <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
-               <div class="error-txt">phone required</div>
-           </div>
-           </div>
-
-           <div class="input-field field">
-               <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
-           </div>
-           </div>
-       </div>
-
-       <div class="textarea-field field">
-           <textarea name="" id="message" cols="30" rows="10"
-           placeholder="Your message" class="item" autocomplete="off"></textarea>
-           <div class="error-txt">Message required</div>
-       </div>
-       <button type="submit">Send Message</button>
-
-   </form>
-
-
-
-</section>
-
-
-
-
-
+    <!--Home-->
+    <section class="cont">
+        <h2>Contact Us!</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ec00b21f-507f-4171-998f-9b9abd159ba7">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" name="name" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Name required</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" name="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt">Email required</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" name="phone" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone required</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" name="subject" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message required</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <!---JS link-->
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script src="more.js"></script>
-
-
-
-
-
-
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="more.js"></script>
 </body>
 </html>
